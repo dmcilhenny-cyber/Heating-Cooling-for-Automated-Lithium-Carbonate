@@ -12,8 +12,8 @@ This document lists all hardware, sensors, thermal components, chemicals, and te
 | Qty | Item | Link |
 |-----|-----|----------------------|
 | x1  | Maker Pi RP2040 (Makerfabs development board) | https://www.adafruit.com/product/5129?srsltid=AfmBOorIpE6wMaou5iYZmOoyeTNcE86JVc4PFggp8JXOjOmYdv9cuu1O |
-| x1  | Soldering Kit | ???? |
-| x2  | Solid Sate Relays | ???? |
+| x1  | Heat shrink solderless wire connectors | https://www.google.com/aclk?sa=L&ai=DChsSEwi-nr7j8ruTAxWNUUcBHUWhIOQYACICCAEQBxoCcXU&co=1&gclid=Cj0KCQjwj47OBhCmARIsAF5wUEFVtMprHDBVp1Jc5eh7xue14t2jzf7lJS9EI69vyJlLcwFccC_V3-AaAvzGEALw_wcB&cid=CAAS9QHkaIwdnpVxDRDRkl9d0SsvovZmXM6ErK8OfrftEmZFh0F0I8CV2RTpKkjvIZoxCZMXEm_pwFzABOAJ0YknAgZCX7S_Qy5Ejf7z1HpzsLJhQIC1UHi8eMDya7VRLOjQpqTcBDeq1j8jQmPg_-pNPLJ6s5z560zco25IRMi4pOLAZIxCRccnwSVWFj8cSlTCwGqoeWlR0AJMArcaVltZhA7uQYFklv4ALOiUs_A9As0QJlJp-9SFjDGDYn_gsJH74YPcOH6yOqFFlTvUoYKFlMZPW-yGYsIU0pFM2V61sAxRM_YA0SC8RVmNdeSO0E89tlUYJBfBWw&cce=1&sig=AOD64_0XyOzTIvu-mvJz9aKOMuIuSDg2Fw&ctype=5&q=&ved=2ahUKEwib9bjj8ruTAxWeD1kFHX03D8EQ9aACKAB6BAgGEDQ&adurl=) |
+| x2  | Solid Sate Relays |https://www.walmart.com/ip/yaaqii-25A-Solid-State-Relay-for-SSR-DC-DC-Input-3-32V-DC-Load-5-220V-DC-DD220D25/17102863207?wmlspartner=wlpa&selectedSellerId=101552964 |
 | x1  | 12V DC Power Supply (≥10A recommended) | https://www.aliexpress.us/item/2251832865241461.html?spm=a2g0o.productlist.main.9.193f4b4ashrQG7&algo_pvid=3507f949-ab9d-42fc-9195-e0dd7d4a38d1&algo_exp_id=3507f949-ab9d-42fc-9195-e0dd7d4a38d1-8&pdp_ext_f=%7B%22order%22%3A%227383%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%2112.94%217.44%21%21%2112.94%217.44%21%402101eecd17692855304107104e672f%2112000016440247430%21sea%21US%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3Aaffa002e%3Bm03_new_user%3A-29895%3BpisId%3A5000000197836311&curPageLogUid=u6dUBxoX99pg&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A33051556213%7C_p_origin_prod%3A  |
 
 ---
