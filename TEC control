@@ -1,0 +1,23 @@
+import board
+import digitalio
+import sys
+import supervisor
+
+# Setup the Relay on GP26
+relay = digitalio.DigitalInOut(board.GP26)
+relay.direction = digitalio.Direction.OUTPUT
+relay.value = False  # Start with relay OFF
+
+print("Relay Control Ready!")
+print("Press SPACE then ENTER in the Serial Console to toggle.")
+
+while True:
+    # Check if there is data waiting in the serial port
+    if supervisor.runtime.serial_bytes_available:
+        # Read the input from your Mac keyboard
+        data = sys.stdin.read(1)
+        
+        if data == " ":  # If it's a space bar
+            relay.value = not relay.value  # Toggle (flip) the state
+            state = "ON" if relay.value else "OFF"
+            print(f"Relay is now: {state}") 
