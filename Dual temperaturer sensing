@@ -1,0 +1,39 @@
+import time
+import board
+import adafruit_ds18x20
+from adafruit_onewire.bus import OneWireBus
+
+# Initialize Bus 1 (GP0)
+ow_bus1 = OneWireBus(board.GP0)
+ds18_1 = None
+
+# Initialize Bus 2 (GP28)
+ow_bus2 = OneWireBus(board.GP28)
+ds18_2 = None
+
+print("Starting dual temperature scan...")
+
+while True:
+    # Scan Bus 1
+    devices1 = ow_bus1.scan()
+    if devices1:
+        ds18_1 = adafruit_ds18x20.DS18X20(ow_bus1, devices1[0])
+        temp1 = ds18_1.temperature
+    else:
+        temp1 = None
+
+    # Scan Bus 2
+    devices2 = ow_bus2.scan()
+    if devices2:
+        ds18_2 = adafruit_ds18x20.DS18X20(ow_bus2, devices2[0])
+        temp2 = ds18_2.temperature
+    else:
+        temp2 = None
+
+    # Display Results
+    t1_str = "{:.1f} C".format(temp1) if temp1 is not None else "LOST"
+    t2_str = "{:.1f} C".format(temp2) if temp2 is not None else "LOST"
+    
+    print(f"Sensor 1 (GP0): {t1_str}  |  Sensor 2 (GP28): {t2_str}")
+    
+    time.sleep(2)
