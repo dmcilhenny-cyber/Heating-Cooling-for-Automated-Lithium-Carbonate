@@ -1,0 +1,36 @@
+import board
+import digitalio
+import time
+
+# Hardware Setup
+led = digitalio.DigitalInOut(board.GP12)
+led.direction = digitalio.Direction.OUTPUT
+
+button = digitalio.DigitalInOut(board.GP13)
+button.direction = digitalio.Direction.INPUT
+button.pull = digitalio.Pull.UP
+
+# State Variables
+led_state = False
+last_button_state = button.value
+
+print("System Ready. Press the button!")
+
+while True:
+    current_button_state = button.value
+    
+    # Detect button press (Transition from HIGH to LOW)
+    if not current_button_state and last_button_state:
+        led_state = not led_state  # Toggle the state
+        led.value = led_state      # Apply state to the LED pin
+        
+        # Display the status in the Serial Monitor
+        if led_state:
+            print("ON")
+        else:
+            print("OFF")
+        
+        # Debounce delay
+        time.sleep(0.2)
+        
+    last_button_state = current_button_state
